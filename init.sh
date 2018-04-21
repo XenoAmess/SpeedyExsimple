@@ -16,7 +16,7 @@ git clone https://github.com/openssl/openssl
 git clone https://github.com/madler/zlib
 git clone https://github.com/nginx/nginx
 
-cp -r /SpeedyExsimple/environments/nginx/ /
+cp -r /SpeedyExsimple/environments/nginx/* /SpeedyExsimple/
 chmod 777 /SpeedyExsimple/environments/pcre-8.42/configure
 cd /SpeedyExsimple
 ./auto/configure --prefix=/SpeedyExsimple --conf-path=/SpeedyExsimple/nginx.conf --with-pcre=/SpeedyExsimple/environments/pcre-8.42 --with-zlib=/SpeedyExsimple/environments/zlib --with-http_ssl_module --with-openssl=/SpeedyExsimple/environments/openssl --with-http_geoip_module
