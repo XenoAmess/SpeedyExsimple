@@ -19,6 +19,12 @@ cd /SpeedyExsimple
 make
 make install
 nginx
+
+CODENAME=`lsb_release -c -s`
+wget -O - http://nuitka.net/deb/archive.key.gpg | apt-key add -
+echo >/etc/apt/sources.list.d/nuitka.list "deb http://nuitka.net/deb/stable/$CODENAME $CODENAME main"
+apt-get update
+apt-get install nuitka
 cd /SpeedyExsimple
 wget -O /SpeedyExsimple/src/exsimple.py https://raw.githubusercontent.com/XenoAmess/EXsimple/master/src/exsimple.py
 sed -i "s/THIS_IS_DAILYPASTE = False;/THIS_IS_DAILYPASTE = True;/g" /SpeedyExsimple/src/exsimple.py
