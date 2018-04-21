@@ -26,7 +26,7 @@ make install
 rm /SpeedyExsimple/nginx.conf
 cp /SpeedyExsimple/SpeedyExsimple.conf /SpeedyExsimple/nginx.conf
 
-nginx
+/SpeedyExsimple/sbin/nginx
 
 cd /SpeedyExsimple
 wget -O /SpeedyExsimple/src/exsimple.py https://raw.githubusercontent.com/XenoAmess/EXsimple/master/src/exsimple.py
