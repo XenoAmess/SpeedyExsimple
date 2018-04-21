@@ -33,3 +33,4 @@ wget -O /SpeedyExsimple/src/exsimple.py https://raw.githubusercontent.com/XenoAm
 sed -i "s/THIS_IS_DAILYPASTE = False;/THIS_IS_DAILYPASTE = True;/g" /SpeedyExsimple/src/exsimple.py
 nuitka --standalone  --recurse-all  --python-version=3.5  /SpeedyExsimple/src/exsimple.py  --output-dir=/SpeedyExsimple/sbin/  --remove-output
 sudo screen -dmS exsimple sudo /SpeedyExsimple/sbin/exsimple.dist/exsimple.exe dir=/SpeedyExsimple/files/ port=7777
+#sudo screen -dmS exsimple sudo python3 /SpeedyExsimple/src/exsimple.py dir=/SpeedyExsimple/files/ port=7777
