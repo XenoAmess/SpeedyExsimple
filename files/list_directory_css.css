@@ -1,0 +1,76 @@
+
+html,body{
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    margin:0px;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow : auto;
+} 
+body {
+    background-color: #FFFFFF;
+}
+.-body {
+}
+ul {
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-weight : 800;
+    border: 0px;
+    border-radius: 0px;
+    list-style-type: none;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width : 100% ;
+}
+li { 
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-weight : 800;
+    /*filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6; */  
+    margin: 5px;
+    display: block;
+    border: 2px solid #000000;
+
+    padding: 5px;
+    border-radius: 5px 5px;
+
+    background-color: #00FFFF;
+}
+li.file {
+    background-color: #00FFFF;
+}
+li.folder {
+    background-color: #00FF00;
+}
+li.link {
+    background-color: #FF3EFF;
+}
+a.link_in_list { 
+    display : block;
+    text-decoration:none;
+    font-weight : 700;
+    font-size : 20px;
+    font-color : #FFFFFF;
+}
+a.link_in_list:link {
+    color: black ; 
+    text-decoration:none;
+} 
+/*常规时候的样式*/
+a.link_in_list:visited {
+    color: black; 
+    text-decoration:none;
+} 
+/*鼠标指上去的样式*/
+a.link_in_list:hover {
+    color: black ;
+    text-decoration:none;
+}
+/*访问过后的样式*/
+ul li{
+    list-style: none;
+    display: block;
+    word-wrap: break-word;
+    word-break: normal; 
+}
+

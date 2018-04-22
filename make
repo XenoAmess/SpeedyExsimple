@@ -1,3 +1,6 @@
+chmod 777 /SpeedyExsimple/startup
+chmod 777 /SpeedyExsimple/shutdown
+
 CODENAME=`lsb_release -c -s`
 wget -O - http://nuitka.net/deb/archive.key.gpg | apt-key add -
 echo >/etc/apt/sources.list.d/nuitka.list "deb http://nuitka.net/deb/stable/$CODENAME $CODENAME main"
