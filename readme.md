@@ -1,9 +1,9 @@
 # SpeedyEXsimple
 A acceleration solution about project [Exsimple](https://github.com/XenoAmess/EXsimple),
 
-It also handles https.
-
 using nginx to handle the download part of the netdisk.
+
+It also handles https.
 
 nginx is far faster than my program(of course).
 	
