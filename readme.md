@@ -7,12 +7,22 @@ It also handles https.
 
 nginx is far faster than my program(of course).
 	
+# notice:
+This program is only tested on Ubuntu 18.04.4 LTS
+
+I do think newer versions of Ubuntu MIGHT also be capable but I haven't found time to test it out.
+
+The make script is using apt, so if you are not using ubuntu you shall handle it yourself.
+
+The make script is using python 3.5 for nuitka, if it cannot run correctly on your machine then You must change it.
+A common way is to use PyPy instead of nuitka. It will work, PyPy is faster than python, but nuitka is always faster.
+
 # how to use:
-Basically this project is for showing off.
+Basically this project is for showing off and benchmark.
 
 In usual use cases of Exsimple, people want to get a fast way to deploy a nedisk.
 
-And deploy a nginx middleware sounds crazy, and unacceptable.
+And deploy a nginx middleware sounds crazy, and unacceptable in such situations.
 
 If you really want to use it anyway:
  
