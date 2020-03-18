@@ -25,13 +25,9 @@ rm -r /SpeedyExsimple/environments/nginx/
 
 chmod 777 /SpeedyExsimple/environments/pcre-8.42/configure
 cd /SpeedyExsimple
-./auto/configure --prefix=/SpeedyExsimple --conf-path=/SpeedyExsimple/nginx.conf --with-pcre=/SpeedyExsimple/environments/pcre-8.42 --with-zlib=/SpeedyExsimple/environments/zlib --with-http_ssl_module --with-openssl=/SpeedyExsimple/environments/openssl
+./auto/configure --prefix=/SpeedyExsimple --conf-path=/SpeedyExsimple/SpeedyExsimple.conf --with-pcre=/SpeedyExsimple/environments/pcre-8.42 --with-zlib=/SpeedyExsimple/environments/zlib --with-http_ssl_module --with-openssl=/SpeedyExsimple/environments/openssl
 make
 make install
-
-rm /SpeedyExsimple/nginx.conf
-cp /SpeedyExsimple/SpeedyExsimple.conf /SpeedyExsimple/nginx.conf
-
 
 cd /SpeedyExsimple
 wget -O /SpeedyExsimple/src/exsimple.py https://raw.githubusercontent.com/XenoAmess/EXsimple/master/src/exsimple.py
