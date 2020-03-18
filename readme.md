@@ -1,6 +1,8 @@
 # SpeedyEXsimple
 A acceleration solution about project [Exsimple](https://github.com/XenoAmess/EXsimple),
 
+It also handles https.
+
 using nginx to handle the download part of the netdisk.
 
 nginx is far faster than my program(of course).
@@ -21,9 +23,10 @@ If you really want to use it anyway:
 You CAN see ./pki/readme.md for more details.
 
 3. you MUST change all dailypaste thing in the codes to your site name.
-4. then you run ./make to build
-5. when you want to start, you run ./startup
-6. when you want to stop, you run ./shutdown
 
- 
+4. then you run ./make to build
+
+5. when you want to start, you run ./startup
+
+6. when you want to stop, you run ./shutdown
   
