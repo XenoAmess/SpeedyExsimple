@@ -1,6 +1,8 @@
 # SpeedyEXsimple
 A acceleration solution about project [Exsimple](https://github.com/XenoAmess/EXsimple),
+
 using nginx to handle the download part of the netdisk.
+
 nginx is far faster than my program(of course).
 	
 # how to use:
