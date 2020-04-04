@@ -18,19 +18,28 @@ mkdir /SpeedyExsimple/environments
 mkdir /SpeedyExsimple/files
 
 cd /SpeedyExsimple/environments
-git clone https://github.com/openssl/openssl
-git clone https://github.com/madler/zlib
-git clone https://github.com/nginx/nginx
+wget https://github.com/openssl/openssl/archive/OpenSSL_1_1_1f.tar.gz
+tar -xf OpenSSL_1_1_1f.tar.gz
+rm OpenSSL_1_1_1f.tar.gz
+
+wget https://github.com/madler/zlib/archive/v1.2.11.tar.gz
+tar -xf v1.2.11.tar.gz
+rm v1.2.11.tar.gz
+
+wget https://github.com/nginx/nginx/archive/release-1.17.9.tar.gz
+tar -xf release-1.17.9.tar.gz
+rm release-1.17.9.tar.gz
+
 wget https://ftp.pcre.org/pub/pcre/pcre-8.42.tar.gz
 tar -xf pcre-8.42.tar.gz
 rm pcre-8.42.tar.gz
 
-cp -r /SpeedyExsimple/environments/nginx/* /SpeedyExsimple/
-rm -r /SpeedyExsimple/environments/nginx/
+cp -r /SpeedyExsimple/environments/nginx-release-1.17.9/* /SpeedyExsimple/
+rm -r /SpeedyExsimple/environments/nginx-release-1.17.9/
 
 chmod +777 /SpeedyExsimple/environments/pcre-8.42/configure
 cd /SpeedyExsimple
-./auto/configure --prefix=/SpeedyExsimple --conf-path=/SpeedyExsimple/SpeedyExsimple.conf --with-pcre=/SpeedyExsimple/environments/pcre-8.42 --with-zlib=/SpeedyExsimple/environments/zlib --with-http_ssl_module --with-openssl=/SpeedyExsimple/environments/openssl
+./auto/configure --prefix=/SpeedyExsimple --conf-path=/SpeedyExsimple/SpeedyExsimple.conf --with-pcre=/SpeedyExsimple/environments/pcre-8.42 --with-zlib=/SpeedyExsimple/environments/zlib-1.2.11 --with-http_ssl_module --with-openssl=/SpeedyExsimple/environments/openssl-OpenSSL_1_1_1f
 sed -i "s/-Werror/ /g" /SpeedyExsimple/objs/Makefile
 make
 make install
