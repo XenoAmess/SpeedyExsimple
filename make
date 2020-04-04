@@ -27,6 +27,7 @@ rm pcre-8.42.tar.gz
 
 cp -r /SpeedyExsimple/environments/nginx/* /SpeedyExsimple/
 rm -r /SpeedyExsimple/environments/nginx/
+sed -i "s/-Werror/ /g" /SpeedyExsimple/objs/Makefile
 
 chmod +777 /SpeedyExsimple/environments/pcre-8.42/configure
 cd /SpeedyExsimple
